@@ -67,3 +67,4 @@ createCalendar(month2, 'month2');
 addClearButton();
 addSaveButton();
 loadProgress();
+
