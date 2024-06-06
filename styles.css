@@ -19,7 +19,6 @@ h1, h2 {
     gap: 10px;
     max-width: 1200px;
     margin: 20px 0;
-    overflow-x: auto;
 }
 
 .day {
@@ -32,7 +31,6 @@ h1, h2 {
     transition: background-color 0.3s, box-shadow 0.3s;
     font-size: 14px;
     position: relative;
-    min-width: 120px;
 }
 
 .day.completed {
@@ -105,8 +103,9 @@ h1, h2 {
 
 @media (max-width: 768px) {
     .calendar {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(7, 1fr);
         max-width: 100%;
+        overflow-x: auto;
     }
     .day {
         min-width: auto;
